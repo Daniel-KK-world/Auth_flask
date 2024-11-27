@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block body %}
+<div class="container">
+  <h1>Welcome to the future</h1>
+  <form id="auth-form" action="{{ url_for('login') }}" method="POST">
+    <input
+      type="text"
+      name="username"
+      placeholder="yourusername"
+      class="input-field"
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="newpassword"
+      class="input-field"
+    />
+    <input
+      type="button"
+      value="Login"
+      class="btn btn-login"
+      onclick="setActionForm('login')"
+    />
+    <input
+      type="button"
+      value="Register"
+      class="btn btn-login"
+      onclick="setActionForm('register')"
+    />
+  </form>
+</div>
+
+<h1>Keep in touch and updated</h1>
+<p>Register for more material like this and link with like minds</p>
+
+<h2>Dedicate some of your time to finding job security.Embrace the future</h2>
+
+<script>
+  function setActionForm(actionType) {
+    let form = document.getElementById("auth-form");
+
+    if (actionType === "login") {
+      form.action = "{{ url_for('login') }}";
+    } else if (actionType === "register") {
+      form.action = "{{ url_for('register') }}";
+    }
+
+    form.method = "POST";
+    form.submit();
+  }
+</script>
+{% endblock %}

@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Container for all content */
+  .container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  .container2{
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4)
+  }
+  
+  /* Header and Navigation */
+  header nav ul {
+    list-style: none;
+    display: block;
+    justify-content: center;
+    gap: 20px;
+    background: #333;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  
+  header nav ul li {
+    color: #f2f2f2;
+    padding-bottom: 0.3rem;
+  }
+  
+  header nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffd700;
+  }
+  
+  /* Footer */
+  footer nav {
+    background: #222;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer nav ul li {
+    margin: 0 10px;
+    color: #f2f2f2;
+  }
+  
+  /* Title and headings */
+  h1 {
+    font-size: 2rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  h2 {
+    color: #ffdd59;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  p{
+    color: rgb(21, 236, 183);
+    text-align: bottom;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #f2f2f2;
+  }
+  
+  .btn-login {
+    background: #2575fc;
+  }
+  
+  .btn-login:hover {
+    background: #1b5bb5;
+  }
+  
+  .btn-logout {
+    background: #e63946;
+  }
+  
+  .btn-logout:hover {
+    background: #b02735;
+  }
+  
+  .btn-register {
+    background: #6a11cb;
+  }
+  
+  .btn-register:hover {
+    background: #4c088f;
+  }
+  
