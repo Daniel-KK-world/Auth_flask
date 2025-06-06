@@ -20,32 +20,26 @@ Virtualenv (optional but recommended)
 Installation
 Clone the Repository
 
-bash
+
 git clone https://github.com/yourusername/logging-in-with-flask.git  
 cd logging-in-with-flask  
 Set Up a Virtual Environment (Optional)
 
-bash
+
 python3 -m venv venv  
 source venv/bin/activate  # On Windows: venv\Scripts\activate  
 Install Dependencies
 
-bash
+
 pip install -r requirements.txt  
 Set Up the Database
 Initialize the SQLite database or connect to your preferred database system:
-
-bash
-Copy code
 flask db init  
 flask db migrate  
 flask db upgrade  
 Run the Application
 
-bash
-Copy code
-flask run  
-The app will be available at http://127.0.0.1:5000.
+
 
 Usage
 Visit the homepage to register a new account.
